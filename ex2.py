@@ -1,7 +1,8 @@
 arr = [3, 4, -7, 3, 1, 3, 1, -4, -2, -2]
-def find_zero_sum():
+
+def check_zero_sum():
     """
-    Find subarray with zero sum. Returns true if found one
+    Check if there is zero sum subarray. Returns true if found one
     """
     unique_sum = set()
     add_sum = 0
@@ -11,7 +12,12 @@ def find_zero_sum():
             unique_sum.add(add_sum)
         else:
             return True
-    
     return False
 
-print(find_zero_sum())
+def find_zero_sum():
+    """
+    Find all zero sum subarrays
+    """
+    
+
+print(check_zero_sum())
